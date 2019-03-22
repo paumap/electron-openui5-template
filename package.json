@@ -1,0 +1,55 @@
+{
+  "name": "electron-openui5-template",
+  "version": "1.0.0",
+  "description": "Basic template for OpenUI5 and Electron",
+  "main": "main.js",
+  "scripts": {
+    "start": "ui5 serve -o index.html",
+    "build": "ui5 build",
+    "build:all": "ui5 build -a",
+    "electron": "npm run build:all && electron .",
+    "electron:win": "npm run build:all && electron-builder"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/paumap/electron-openui5-template.git"
+  },
+  "keywords": [
+    "sapui5",
+    "openui5",
+    "electron"
+  ],
+  "author": "Pau Martí",
+  "license": "MIT",
+  "dependencies": {
+    "@openui5/sap.m": "^1.63.0",
+    "@openui5/sap.ui.core": "^1.63.0",
+    "@openui5/sap.ui.layout": "^1.63.0",
+    "@openui5/themelib_sap_belize": "^1.63.0"
+  },
+  "devDependencies": {
+    "@ui5/cli": "^1.2.0",
+    "electron": "^4.0.6",
+    "electron-builder": "^20.39.0"
+  },
+  "build": {
+    "appId": "sap.ui.demo.basicTemplate",
+    "directories": {
+      "output": "release-builds"
+    },
+    "files": [
+      "node_modules/**",
+      "dist/**/*",
+      "main.js"
+    ],
+    "asar": true,
+    "nsis": {
+      "allowToChangeInstallationDirectory": true,
+      "oneClick": false
+    },
+    "win": {
+      "target": "nsis",
+      "icon": "build/icon.png"
+    }
+  }
+}
