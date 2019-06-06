@@ -22,15 +22,15 @@
   "author": "Pau Martí",
   "license": "MIT",
   "dependencies": {
-    "@openui5/sap.m": "^1.63.0",
-    "@openui5/sap.ui.core": "^1.63.0",
-    "@openui5/sap.ui.layout": "^1.63.0",
-    "@openui5/themelib_sap_belize": "^1.63.0"
+    "@openui5/sap.m": "^1.66.1",
+    "@openui5/sap.ui.core": "^1.66.1",
+    "@openui5/sap.ui.layout": "^1.66.1",
+    "@openui5/themelib_sap_belize": "^1.66.1"
   },
   "devDependencies": {
-    "@ui5/cli": "^1.2.0",
-    "electron": "^4.0.6",
-    "electron-builder": "^20.39.0"
+    "@ui5/cli": "^1.5.0",
+    "electron": "^4.2.4",
+    "electron-builder": "^20.43.0"
   },
   "build": {
     "appId": "sap.ui.demo.basicTemplate",
